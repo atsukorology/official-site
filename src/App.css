@@ -1,38 +1,61 @@
-.App {
+.contain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 2カラム */
+  grid-template-rows: auto auto auto 1fr;
+  /* 行数 */
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  /* 濃い背景色 */
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+  /* フォント */
+  color: #fff;
+  /* テキストの色 */
+}
+
+.company {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.reservation {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 1em;
+  padding-left: 20px;
+}
+
+.title-container {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  /* background-color: #007bff; */
+  /* 背景色 */
+  background-image: url('./assets/title-background.jpg');
+  /* 画像背景 */
+  background-size: cover;
+  /* 画像をカバー */
+  background-position: center;
+  /* 画像を中央に配置 */
   text-align: center;
+  margin-top: 20px;
+  padding: 400px 20px;
+  border-radius: 10px;
+  /* 角を丸める */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* シャドウ */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+  /* タイトルの色 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* テキストシャドウ */
 }
