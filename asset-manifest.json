@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/official-site/static/css/main.f855e6bc.css",
-    "main.js": "/official-site/static/js/main.3dab3c33.js",
+    "main.css": "/official-site/static/css/main.fa967b06.css",
+    "main.js": "/official-site/static/js/main.871fd1b3.js",
     "static/js/453.e549112a.chunk.js": "/official-site/static/js/453.e549112a.chunk.js",
-    "static/media/logo.svg": "/official-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/title-background.jpg": "/official-site/static/media/title-background.0fe7fbb335762658344a.jpg",
+    "static/media/astrologer.jpeg": "/official-site/static/media/astrologer.a551b7739b64a865ddf8.jpeg",
     "index.html": "/official-site/index.html",
-    "main.f855e6bc.css.map": "/official-site/static/css/main.f855e6bc.css.map",
-    "main.3dab3c33.js.map": "/official-site/static/js/main.3dab3c33.js.map",
+    "main.fa967b06.css.map": "/official-site/static/css/main.fa967b06.css.map",
+    "main.871fd1b3.js.map": "/official-site/static/js/main.871fd1b3.js.map",
     "453.e549112a.chunk.js.map": "/official-site/static/js/453.e549112a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.3dab3c33.js"
+    "static/css/main.fa967b06.css",
+    "static/js/main.871fd1b3.js"
   ]
 }
