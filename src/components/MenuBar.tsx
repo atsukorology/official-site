@@ -11,6 +11,13 @@ const MenuBar: React.FC = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleReservationClick = () => {
+        const plansSection = document.getElementById('session-plans');
+        if (plansSection) {
+            plansSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <motion.nav
             className="fixed top-0 left-0 w-full z-50 backdrop-blur-sm bg-black/50 text-white py-4 px-6 flex items-center justify-between"
@@ -29,9 +36,8 @@ const MenuBar: React.FC = () => {
 
             {/* 右側：予約ボタンとメニューボタン */}
             <div className="flex items-center space-x-4">
-                <Button>Reservation</Button>
+                <Button onClick={handleReservationClick}>Reservation</Button>
                 {/* メニュー展開用ボタン */}
-                <MenuToggleButton onToggle={handleMenuToggle} />
             </div>
         </motion.nav>
     );
