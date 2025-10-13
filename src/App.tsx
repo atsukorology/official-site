@@ -215,12 +215,18 @@ function App() {
           </div>
 
           <div className="m-10">
-            <SessionCard title="First Session" subtitle="約90分 / ￥12,000" content={
+            <SessionCard title="First Session (Long Version)" subtitle="約90分 / ￥12,000-" content={
               <div>
                 <div className='text-sm'>
-                  <p>初めての方に受けていただくセッションです。
+                  <p>
+                    初めての方に受けて頂けるセッションです。じっくり、たっぷりお話したい方にオススメです。
                     <br />
-                    あなた自身に関する情報をお伝えします。また、あなたの現在地を確認し、未来を構築するお手伝いを致します。</p>
+                    生まれ持った性質、才能、価値観、人間関係、恋愛・結婚観、働き方・適職など、人生をよりハッピーに過ごすために必要な"あなたらしさ"をお伝えします。
+                    <br />
+                    その上で、人生の現在地と今後の方向性をお伝えし、人生プランのご提案もさせていただきます。
+                    <br />
+                    母子手帳などに記載の正確な出生時刻がわかる方にオススメです。
+                  </p>
                 </div>
                 <div className="flex justify-center mt-10">
                   <Button
@@ -236,18 +242,42 @@ function App() {
           </div>
 
           <div className="m-10">
-            <SessionCard title="Repeat Session" subtitle="約60分 / ￥8,000" content={
+            <SessionCard title="First Session (Short Version)" subtitle="約45分 / ￥6,500-" content={
               <div>
                 <div className='text-sm'>
-                  <p>2回目以降に受けていただくセッションです。
+                  <p>初めての方に受けていただくセッションですが、ざっくりと話を聞いてみたい方にオススメです。
                     <br />
-                    First Sessionを受けていただいた方のセッションです。現在地の確認をし、今後のライフプランを創造、設計していくお手伝いを致します。</p>
+                    お伝えする内容は、基本的にLong Versionと同じです。
+                    <br />
+                    正確な出生時刻がわからない方は、お伝えできる情報に限りがありますので、こちらのプランがオススメです。</p>
                 </div>
                 <div className="flex justify-center mt-10">
                   <Button
                     normalColor="#2563eb"
                     hoverColor="rgba(255,255,255,1.0)"
-                    onClick={() => handleReservation('repeat')}
+                    onClick={() => window.open('#', '_blank')}
+                  >
+                    セッションを予約（準備中）
+                  </Button>
+                </div>
+              </div>
+            } />
+          </div>
+
+          <div className="m-10">
+            {/*学割セッション*/}
+            <SessionCard title="Student Session" subtitle="約30分 / ￥2,000-" content={
+              <div>
+                <div className='text-sm'>
+                  <p>学生さん限定のセッションです。
+                    <br />
+                    自分の才能は？得意なことは？何が向いている？適職は？友人関係や恋愛観は？など、自己分析したい方にオススメです。普段は大学院の研究室で秘書をしている私です。多くの学生さんと交流してきていますので、どうぞお気軽にお越しください。</p>
+                </div>
+                <div className="flex justify-center mt-10">
+                  <Button
+                    normalColor="#2563eb"
+                    hoverColor="rgba(255,255,255,1.0)"
+                    onClick={() => handleReservation('student')}
                   >
                     セッションを予約
                   </Button>
@@ -257,17 +287,18 @@ function App() {
           </div>
 
           <div className="m-10">
-            {/*学割セッション*/}
-            <SessionCard title="Student Session" subtitle="20% OFF" content={
+            <SessionCard title="Repeat Session" subtitle="約60分 / ￥8,000-" content={
               <div>
                 <div className='text-sm'>
-                  <p>現役学生の方限定のセッションです。<br />First SessionまたはRepeat Sessionを20%オフでご提供いたします。セッション当日に学生証のご提示をお願い申し上げます。</p>
+                  <p>First Sessionを受けて頂いた方が対象のセッションです。今、どんな選択をしたらいいの？今年のテーマ、取り組むべき課題は？何を目指したらいい？今後向かうべき方向性は？といった、人生プランをご提案させて頂きます。
+                    <br />
+                    年に１回、半年に１回など、ご自身のタイミングで定期的に受けて頂くのがオススメです。</p>
                 </div>
                 <div className="flex justify-center mt-10">
                   <Button
                     normalColor="#2563eb"
                     hoverColor="rgba(255,255,255,1.0)"
-                    onClick={() => handleReservation('student')}
+                    onClick={() => handleReservation('repeat')}
                   >
                     セッションを予約
                   </Button>
