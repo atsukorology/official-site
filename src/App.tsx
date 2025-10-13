@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import MenuBar from './components/MenuBar';
 import ImageWithText from './components/ImageWithText';
-import TitleBackground from './assets/title-background.jpg';
+import TitleBackground from './assets/title-background.png';
 import Divider from './components/Divider';
-import CircleImage from './components/CircleImage';
-import AstrologerImage from './assets/astrologer.jpeg';
+import AtsukoTrim from './assets/atsuko-trim.png';
 import InfoPanel from './components/InfoPanel';
 import { MeetingIcon, CurrencyIcon, CalendarIcon, PopMeetingIcon, PopCalendarIcon, PopMoneyIcon, PopCurrencyIcon } from './components/Icons';
 import SessionCard from './components/SessionCard';
@@ -107,7 +106,7 @@ function App() {
           </div>
 
           <div className="flex justify-center m-10">
-            <CircleImage imageUrl={AstrologerImage} size="w-48 h-48" />
+            <img src={AtsukoTrim} alt="Atsuko" className="max-w-xs w-full h-auto" />
           </div>
 
           <div className="m-10">
