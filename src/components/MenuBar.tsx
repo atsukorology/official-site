@@ -31,7 +31,7 @@ const MenuBar: React.FC = () => {
                 <div className="mr-4">
                     <BrandIcon width="4em" height="3em" strokeWidth="0.7" />
                 </div>
-                <span className="text-xl font-semibold">Atsukorology</span>
+                <span className="text-xl md:text-2xl lg:text-3xl font-semibold">Atsukorology</span>
             </div>
 
             {/* 右側：予約ボタンとメニューボタン */}

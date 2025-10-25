@@ -17,7 +17,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({
     return (
         <div>
             {/* タイトル */}
-            <h2 className="text-lg font-semibold mb-1 pt-2">{title}</h2>
+            <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-1 pt-2">{title}</h2>
             <div className={`flex items-center justify-between pb-4 rounded-md bg-${backgroundColor}`}>
                 {/* テキストコンテンツ */}
                 <div className="flex-grow">

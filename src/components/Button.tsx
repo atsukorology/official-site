@@ -11,7 +11,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ children, onClick, normalColor = 'rgba(255,255,255,1.0)', hoverColor = 'rgba(0,0,0,1.0)' }) => {
     return (
         <motion.button
-            className={`border rounded-md py-2 px-4 transition-colors duration-50`}
+            className={`border rounded-md py-2 px-4 transition-colors duration-50 text-sm md:text-base lg:text-lg`}
             style={{
                 backgroundColor: "rgba(255,255,255,0.0)",
                 color: normalColor, // 文字色

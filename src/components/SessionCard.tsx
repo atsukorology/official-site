@@ -18,13 +18,13 @@ const SessionCard: React.FC<SessionCardProps> = ({
             whileHover={{ y: -5 }}
         >
             {/* タイトル */}
-            <h2 className="text-2xl font-semibold text-gray-800 text-center">{title}</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 text-center">{title}</h2>
 
             {/* サブタイトル */}
-            <p className="text-gray-600 text-center mt-2">{subtitle}</p>
+            <p className="text-gray-600 text-center mt-2 md:text-lg lg:text-xl">{subtitle}</p>
 
             {/* コンテンツ */}
-            <div className="mt-10 mr-10 ml-10 text-gray-700">
+            <div className="mt-6 mr-4 ml-4 text-gray-700">
                 {content}
             </div>
         </motion.div>

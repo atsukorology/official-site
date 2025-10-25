@@ -47,21 +47,19 @@ function App() {
 
       <div className="flex justify-center">
 
-        <div className="max-w-4xl">
+        <div className="max-w-6xl">
 
           <div className="text-center">
-            <h1 className="font-noto text-3xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', padding: '1em' }}>
+            <h1 className="font-noto text-3xl md:text-4xl lg:text-5xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', padding: '1em' }}>
               "人生の秘書"
-              <br />
               としての
-              <br />
               占い師
             </h1>
           </div>
 
 
-          <div className="mr-10 ml-10">
-            <p className="font-noto font-light text-sm" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
+          <div className="mr-4 ml-4">
+            <p className="font-noto font-light text-sm md:text-base lg:text-lg" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
               将来への不安、誰にも言えない悩み…時には立ち止まって、誰かに頼ることも大切です。私があなたの人生の秘書としてそっと支え、一歩踏み出す勇気を応援します。
               <br />
               特に悩みはないけれど、停滞感を打破したい、新しい可能性を見つけたい…そんなあなたの可能性を最大限に引き出すお手伝いを致します。
@@ -72,23 +70,19 @@ function App() {
           </div>
 
 
-          <Divider marginHorizontal={10} />
+          <Divider marginHorizontal={4} />
 
           <div className="text-center">
-            <h3 className="font-noto text-xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
-              あなたの
-              <br />
-              "見えない裏"を知る
+            <h3 className="font-noto text-xl md:text-2xl lg:text-3xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
+              あなたの"見えない裏"を知る
             </h3>
-            <h1 className="font-noto text-4xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingBottom: '1em' }}>
-              プライベート
-              <br />
-              セッション
+            <h1 className="font-noto text-4xl md:text-5xl lg:text-6xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingBottom: '1em' }}>
+              プライベートセッション
             </h1>
           </div>
 
-          <div className="ml-10 mr-10">
-            <p className="font-noto font-light text-sm" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
+          <div className="ml-4 mr-4">
+            <p className="font-noto font-light text-sm md:text-base lg:text-lg" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
               西洋占星術は、4000年以上の歴史を持つ天文学と統計学に基づくビッグデータです。ホロスコープという天体の配置図を用いて、そこから読み取れるあなたの情報をお伝えします。
               <br />
               <br />
@@ -96,13 +90,13 @@ function App() {
             </p>
           </div>
 
-          <Divider marginHorizontal={10} />
+          <Divider marginHorizontal={4} />
 
           <div className="text-center">
-            <h2 className="font-noto text-2xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
+            <h2 className="font-noto text-2xl md:text-3xl lg:text-4xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
               Astrologer
             </h2>
-            <h2 className="font-noto text-xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
+            <h2 className="font-noto text-xl md:text-2xl lg:text-3xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
               Atsuko
             </h2>
           </div>
@@ -111,8 +105,8 @@ function App() {
             <img src={AtsukoTrim} alt="Atsuko" className="max-w-xs w-full h-auto" />
           </div>
 
-          <div className="m-10">
-            <p className="font-noto font-light text-sm" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
+          <div className="m-4">
+            <p className="font-noto font-light text-sm md:text-base lg:text-lg" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
               <br />
               元銀行員として、多くのお客様の声に耳を傾け、資産やライフプランの相談を承ってきました。今は大学の秘書として、教授のサポートとたくさんの学生さんの成長を側で見守っています。その経験から、今度はあなたの'人生の秘書'として、占いでそっと あなたに寄り添い、心が軽くなるようなメッセージをお届けしたいと思っています。
               <br />
@@ -132,9 +126,9 @@ function App() {
             </p>
           </div>
 
-          <Divider marginHorizontal={10} />
+          <Divider marginHorizontal={4} />
 
-          <div className="m-10">
+          <div className="m-4">
 
           </div>
 
@@ -144,26 +138,26 @@ function App() {
 
       <div className="flex justify-center bg-white text-black">
 
-        <div className="max-w-4xl">
+        <div className="max-w-6xl">
 
           <div className="text-center">
-            <h1 className="font-noto text-4xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', padding: '1em' }}>
+            <h1 className="font-noto text-4xl md:text-5xl lg:text-6xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', padding: '1em' }}>
               Private Session
             </h1>
           </div>
 
-          <div className="mr-10 ml-10">
-            <p className="font-noto font-light text-sm" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
+          <div className="mr-4 ml-4">
+            <p className="font-noto font-light text-sm md:text-base lg:text-lg" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
               ホロスコープを用いたプライベートセッションをオンラインで実施します。
             </p>
           </div>
 
-          <div className="ml-10 mr-10" style={{ padding: '1em' }}>
+          <div className="ml-4 mr-4" style={{ padding: '1em' }}>
 
             <InfoPanel icon={<div style={{ width: '4em' }}>
               <PopMeetingIcon fill="darkslategrey" />
             </div>} title="開催方法" content={
-              <div className='text-xs'>
+              <div className='text-xs md:text-sm lg:text-base'>
                 <p>Google Meetを用いてオンラインで実施します。</p>
                 <p>お申し込み後にオンライン会議用のリンクをメールでお送りします。</p>
               </div>
@@ -174,7 +168,7 @@ function App() {
                 <PopCalendarIcon fill="darkslategrey" />
               </div>
             } title="開催日時" content={
-              <div className='text-xs'>
+              <div className='text-xs md:text-sm lg:text-base'>
                 <p>①「セッションを予約」ボタンから予約フォームにアクセスし、必要事項を入力して下さい。</p>
                 <p>②セッション日時を決定します。</p>
                 <p>③セッション前日までにお支払いをお願いします。​</p>
@@ -185,7 +179,7 @@ function App() {
             <InfoPanel icon={<div style={{ width: '4em' }}>
               <PopCurrencyIcon fill="darkslategrey" />
             </div>} title="お支払い方法" content={
-              <div className='text-xs'>
+              <div className='text-xs md:text-sm lg:text-base'>
                 <p>銀行振込</p>
                 <p>セッション前日までにお支払いをお願いいたします。</p>
                 <p>※振込に係る手数料はお客さまご負担となります。</p>
@@ -197,8 +191,8 @@ function App() {
 
             <Modal isOpen={isCancelPolicyModalOpen} onClose={handleCloseCancelPolicy}>
               <div className="text-black">
-                <h2 className="text-xl font-bold mb-4">キャンセルポリシー</h2>
-                <div className="space-y-4 text-sm">
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">キャンセルポリシー</h2>
+                <div className="space-y-4 text-sm md:text-base lg:text-lg">
                   <p>※入金後の返金はできません。</p>
                   <p>※ご都合が悪くなってしまった場合は日程変更も可能ですので、お気軽にご相談ください。</p>
                 </div>
@@ -208,18 +202,18 @@ function App() {
           </div>
 
           <div id="session-plans"></div>
-          <Divider marginHorizontal={10} color="black" />
+          <Divider marginHorizontal={4} color="black" />
 
           <div className="text-center">
-            <h1 className="font-noto text-4xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
+            <h1 className="font-noto text-4xl md:text-5xl lg:text-6xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
               Plans
             </h1>
           </div>
 
-          <div className="m-10">
+          <div className="m-4">
             <SessionCard title="First Session (Long Version)" subtitle="約90分 / ￥12,000-" content={
               <div>
-                <div className='text-sm'>
+                <div className='text-sm md:text-base lg:text-lg'>
                   <p>
                     初めての方に受けて頂けるセッションです。じっくり、たっぷりお話したい方にオススメです。
                     <br />
@@ -230,7 +224,7 @@ function App() {
                     母子手帳などに記載の正確な出生時刻がわかる方にオススメです。
                   </p>
                 </div>
-                <div className="flex justify-center mt-10">
+                <div className="flex justify-center mt-6">
                   <Button
                     normalColor="#2563eb"
                     hoverColor="rgba(255,255,255,1.0)"
@@ -243,17 +237,17 @@ function App() {
             } />
           </div>
 
-          <div className="m-10">
+          <div className="m-4">
             <SessionCard title="First Session (Short Version)" subtitle="約45分 / ￥5,000-" content={
               <div>
-                <div className='text-sm'>
+                <div className='text-sm md:text-base lg:text-lg'>
                   <p>初めての方に受けていただくセッションですが、ざっくりと話を聞いてみたい方にオススメです。
                     <br />
                     お伝えする内容は、基本的にLong Versionと同じです。
                     <br />
                     正確な出生時刻がわからない方は、お伝えできる情報に限りがありますので、こちらのプランがオススメです。</p>
                 </div>
-                <div className="flex justify-center mt-10">
+                <div className="flex justify-center mt-6">
                   <Button
                     normalColor="#2563eb"
                     hoverColor="rgba(255,255,255,1.0)"
@@ -266,16 +260,16 @@ function App() {
             } />
           </div>
 
-          <div className="m-10">
+          <div className="m-4">
             {/*学割セッション*/}
             <SessionCard title="Student Session" subtitle="約30分 / ￥2,000-" content={
               <div>
-                <div className='text-sm'>
+                <div className='text-sm md:text-base lg:text-lg'>
                   <p>学生さん限定のセッションです。
                     <br />
                     自分の才能は？得意なことは？何が向いている？適職は？友人関係や恋愛観は？など、自己分析したい方にオススメです。普段は大学院の研究室で秘書をしている私です。多くの学生さんと交流してきていますので、どうぞお気軽にお越しください。</p>
                 </div>
-                <div className="flex justify-center mt-10">
+                <div className="flex justify-center mt-6">
                   <Button
                     normalColor="#2563eb"
                     hoverColor="rgba(255,255,255,1.0)"
@@ -288,15 +282,15 @@ function App() {
             } />
           </div>
 
-          <div className="m-10">
+          <div className="m-4">
             <SessionCard title="Repeat Session" subtitle="約60分 / ￥8,000-" content={
               <div>
-                <div className='text-sm'>
+                <div className='text-sm md:text-base lg:text-lg'>
                   <p>First Sessionを受けて頂いた方が対象のセッションです。今、どんな選択をしたらいいの？今年のテーマ、取り組むべき課題は？何を目指したらいい？今後向かうべき方向性は？といった、人生プランをご提案させて頂きます。
                     <br />
                     年に１回、半年に１回など、ご自身のタイミングで定期的に受けて頂くのがオススメです。</p>
                 </div>
-                <div className="flex justify-center mt-10">
+                <div className="flex justify-center mt-6">
                   <Button
                     normalColor="#2563eb"
                     hoverColor="rgba(255,255,255,1.0)"
