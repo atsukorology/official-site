@@ -25,12 +25,14 @@ function App() {
   const handleReservation = (sessionType: string) => {
     // 予約フォームのURL（実際のURLに置き換えてください）
     let reservationUrl = '';
-    if (sessionType === 'first') {
-      reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=First+Session';
+    if (sessionType === 'first-long') {
+      reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=First+Session+%EF%BC%88Direction+Book%E4%BB%98%EF%BC%89%EF%BF%A512,000%EF%BC%8F90min.';
+    } else if (sessionType === 'first-short') {
+      reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=First+Session+%EF%BF%A55,000%EF%BC%8F45min.';
     } else if (sessionType === 'repeat') {
-      reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=Repeat+Session';
+      reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=Repeat+Session+%EF%BC%88Direction+Book%E4%BB%98%EF%BC%89%EF%BF%A58,000%EF%BC%8F60min.';
     } else if (sessionType === 'student') {
-      reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=Student+Session%EF%BC%88%E5%AD%A6%E7%94%9F%E3%81%AE%E6%96%B9%E9%99%90%E5%AE%9A%EF%BC%89';
+      reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=Student+Session%EF%BC%88%E5%AD%A6%E7%94%9F%E3%81%AE%E6%96%B9%E9%99%90%E5%AE%9A%EF%BC%89%EF%BF%A52,000%EF%BC%8F30min.';
     }
     window.open(reservationUrl, '_blank');
   };
@@ -232,7 +234,7 @@ function App() {
                   <Button
                     normalColor="#2563eb"
                     hoverColor="rgba(255,255,255,1.0)"
-                    onClick={() => handleReservation('first')}
+                    onClick={() => handleReservation('first-long')}
                   >
                     セッションを予約
                   </Button>
@@ -242,7 +244,7 @@ function App() {
           </div>
 
           <div className="m-10">
-            <SessionCard title="First Session (Short Version)" subtitle="約45分 / ￥6,500-" content={
+            <SessionCard title="First Session (Short Version)" subtitle="約45分 / ￥5,000-" content={
               <div>
                 <div className='text-sm'>
                   <p>初めての方に受けていただくセッションですが、ざっくりと話を聞いてみたい方にオススメです。
@@ -255,9 +257,9 @@ function App() {
                   <Button
                     normalColor="#2563eb"
                     hoverColor="rgba(255,255,255,1.0)"
-                    onClick={() => window.open('#', '_blank')}
+                    onClick={() => handleReservation('first-short')}
                   >
-                    セッションを予約（準備中）
+                    セッションを予約
                   </Button>
                 </div>
               </div>
