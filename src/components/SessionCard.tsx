@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 interface SessionCardProps {
-    title: string;
+    title: React.ReactNode;
     subtitle: string;
     content: React.ReactNode;
 }

@@ -52,7 +52,9 @@ function App() {
           <div className="text-center">
             <h1 className="font-noto text-3xl md:text-4xl lg:text-5xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', padding: '1em' }}>
               "人生の秘書"
+              <br className="md:hidden" />
               としての
+              <br className="md:hidden" />
               占い師
             </h1>
           </div>
@@ -74,10 +76,12 @@ function App() {
 
           <div className="text-center">
             <h3 className="font-noto text-xl md:text-2xl lg:text-3xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
-              あなたの"見えない裏"を知る
+              あなたの
+              <br className="md:hidden" />
+              "見えない裏"を知る
             </h3>
             <h1 className="font-noto text-4xl md:text-5xl lg:text-6xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingBottom: '1em' }}>
-              プライベートセッション
+              プライベート<br className="md:hidden" />セッション
             </h1>
           </div>
 
@@ -211,7 +215,7 @@ function App() {
           </div>
 
           <div className="m-4">
-            <SessionCard title="First Session (Long Version)" subtitle="約90分 / ￥12,000-" content={
+            <SessionCard title={<>First Session<br className="md:hidden" /> (Long Version)</>} subtitle="約90分 / ￥12,000-" content={
               <div>
                 <div className='text-sm md:text-base lg:text-lg'>
                   <p>
@@ -238,7 +242,7 @@ function App() {
           </div>
 
           <div className="m-4">
-            <SessionCard title="First Session (Short Version)" subtitle="約45分 / ￥5,000-" content={
+            <SessionCard title={<>First Session<br className="md:hidden" /> (Short Version)</>} subtitle="約45分 / ￥5,000-" content={
               <div>
                 <div className='text-sm md:text-base lg:text-lg'>
                   <p>初めての方に受けていただくセッションですが、ざっくりと話を聞いてみたい方にオススメです。
