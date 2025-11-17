@@ -51,47 +51,47 @@ function App() {
 
           <div className="text-center">
             <h1 className="font-noto text-3xl md:text-4xl lg:text-5xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', padding: '1em' }}>
-              "人生の秘書"
+              “人生の秘書”
               <br className="md:hidden" />
-              としての
-              <br className="md:hidden" />
-              占い師
+              としての占い師
             </h1>
           </div>
 
 
           <div className="mr-4 ml-4">
-            <p className="font-noto font-light text-sm md:text-base lg:text-lg" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
-              将来への不安、誰にも言えない悩み…時には立ち止まって、誰かに頼ることも大切です。私があなたの人生の秘書としてそっと支え、一歩踏み出す勇気を応援します。
-              <br />
-              特に悩みはないけれど、停滞感を打破したい、新しい可能性を見つけたい…そんなあなたの可能性を最大限に引き出すお手伝いを致します。
-              <br />
-              あなたの人生の秘書として、あなたの本質を伝え、より自分らしい生き方へサポートさせていただきます。
-              <br />
-            </p>
+            <div className="font-noto font-light text-sm md:text-base lg:text-lg space-y-6" style={{ lineHeight: '1.75', letterSpacing: '0.05em', padding: '1em' }}>
+              <p>人生の<strong>専属秘書</strong>として、あなたの“本質”と“今”を導きます。</p>
+              <p>人生に<strong>専属の秘書</strong>がいたら、どんなに心強いでしょう。私は、<strong>西洋占星術</strong>と<strong>タロット</strong>を用いて、あなたの「人生の秘書」として寄り添い、より自分らしく生きるためのサポートをいたします。</p>
+              <p><strong>西洋占星術</strong>では、生まれた瞬間の星の配置から、あなたが生まれ持った個性や才能、人生のテーマを読み解きます。いわば、あなた専用の“<strong>人生の設計図</strong>”を開くような時間です。</p>
+              <p><strong>タロット</strong>では、今抱えている迷いや選択の岐路に対して、「今、何が必要なのか」「どう動くと流れが変わるのか」を具体的にお伝えします。</p>
+              <p>将来への不安や、誰にも言えない悩み…。ときには立ち止まり、誰かに頼ることも大切です。そして「特に悩みはないけれど、なんとなく停滞している」という時も。あなたの中に眠る力を引き出し、一歩を踏み出す勇気を取り戻すお手伝いをいたします。</p>
+              <p><strong>占い</strong>とは“<strong>うらなり</strong>”――すなわち、裏の成り立ち。出来事の表側だけでなく、その“裏側”にある意味をひも解くことで、あなたが自分らしい人生を選び取っていけるようにサポートいたします。</p>
+              <p>星とカードが示すメッセージを通して、あなたの人生がより<strong>Happy</strong>に輝いていきますように。</p>
+            </div>
           </div>
 
 
           <Divider marginHorizontal={4} />
 
           <div className="text-center">
-            <h3 className="font-noto text-xl md:text-2xl lg:text-3xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em' }}>
-              あなたの
+            <h1 className="font-noto text-3xl md:text-4xl lg:text-5xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingTop: '1em', paddingBottom: '1em' }}>
+              西洋占星術×タロットで
               <br className="md:hidden" />
-              "見えない裏"を知る
-            </h3>
-            <h1 className="font-noto text-4xl md:text-5xl lg:text-6xl font-light" style={{ lineHeight: '1.5', letterSpacing: '0.3em', paddingBottom: '1em' }}>
-              プライベート<br className="md:hidden" />セッション
+              あなたの“見えない裏”を知る
             </h1>
           </div>
 
           <div className="ml-4 mr-4">
-            <p className="font-noto font-light text-sm md:text-base lg:text-lg" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
-              西洋占星術は、4000年以上の歴史を持つ天文学と統計学に基づくビッグデータです。ホロスコープという天体の配置図を用いて、そこから読み取れるあなたの情報をお伝えします。
-              <br />
-              <br />
-              占いとはうらなり、すなわち、裏の成り立ちです。エンターテイメントではない、あなた自身とあなたの人生の裏の成り立ちをお伝えし、あなたらしく生きるサポートをします。
-            </p>
+            <div className="font-noto font-light text-sm md:text-base lg:text-lg space-y-6" style={{ lineHeight: '1.75', letterSpacing: '0.05em', padding: '1em' }}>
+              <p><strong>西洋占星術</strong>は、4000年以上の歴史を持つ天文学と統計学に基づくビッグデータです。ホロスコープという天体の配置図を用いて、そこから読み取れるあなただけの情報をお伝えします。</p>
+              <p>私たちが普段「星占い」で目にする星座は、実は<strong>太陽星座</strong>と呼ばれるものです。これは、生まれた瞬間に太陽が位置していた星座を示しています。</p>
+              <p>けれども、私たちの生まれた空には、太陽以外にも月や水星、金星、火星など――さまざまな天体が、それぞれの場所で輝いています。</p>
+              <p><strong>ホロスコープ</strong>は、ギリシャ語で時間（ora）と観察者（scopos）。東の地平線から昇ってくる星を観察する、これが由来です。ホロスコープは、あなたが生まれた瞬間の星々の配置を切りとった、あなただけの<strong>天体の配置図</strong>です。生涯変わることはありません。</p>
+              <p>西洋占星術では、このホロスコープを読み解くことで、性格や才能、思考の傾向、感情の動き、人間関係のテーマ、そして人生の流れまでも見つめていきます。</p>
+              <p>星占いで見ている「一つの星座」は、あなたという宇宙のほんの一部。ホロスコープを読み解くことで、あなたという存在の全体像――“本当の自分”がより立体的に浮かび上がってきます。</p>
+              <p><strong>タロットカード</strong>は、「心」の声を聴くためのツールです。選択の迷い、見えない不安、あなたの本心――一枚一枚のカードは、あなた自身も気づいていない<strong>潜在意識</strong>からのメッセージを映し出します。</p>
+              <p>それは未来を縛る予言ではなく、あなたがより良い未来を選ぶための<strong>智慧</strong>。あなたの心が本当に望む道を探すお手伝いをいたします。</p>
+            </div>
           </div>
 
           <Divider marginHorizontal={4} />
@@ -110,7 +110,7 @@ function App() {
           </div>
 
           <div className="m-4">
-            <p className="font-noto font-light text-sm md:text-base lg:text-lg" style={{ lineHeight: '1.5', letterSpacing: '0.2em', padding: '1em' }}>
+            <p className="font-noto font-light text-sm md:text-base lg:text-lg" style={{ lineHeight: '1.5', letterSpacing: '0.05em', padding: '1em' }}>
               <br />
               元銀行員として、多くのお客様の声に耳を傾け、資産やライフプランの相談を承ってきました。今は大学の秘書として、教授のサポートとたくさんの学生さんの成長を側で見守っています。その経験から、今度はあなたの'人生の秘書'として、占いでそっと あなたに寄り添い、心が軽くなるようなメッセージをお届けしたいと思っています。
               <br />
