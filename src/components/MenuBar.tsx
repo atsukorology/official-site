@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import MenuToggleButton from './MenuToggleButton';
 import BrandIcon from './BrandIcon';
@@ -27,15 +28,16 @@ const MenuBar: React.FC = () => {
         >
             {/* 左側：アイコンとタイトル */}
             <div className="flex items-center space-x-2">
-                {/* アイコン (仮のアイコンを使用) */}
-                <div className="mr-4">
+                <Link to="/portal" className="hover:opacity-80 transition-opacity mr-4">
                     <BrandIcon width="4em" height="3em" strokeWidth="0.7" />
-                </div>
-                <span className="text-xl md:text-2xl lg:text-3xl font-semibold">Atsukorology</span>
+                </Link>
+                <Link to="/atsukorology" className="hover:opacity-80 transition-opacity">
+                    <span className="text-xl md:text-2xl lg:text-3xl font-semibold">Atsukorology</span>
+                </Link>
             </div>
 
             {/* 右側：予約ボタンとメニューボタン */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-6">
                 <Button onClick={handleReservationClick}>Reservation</Button>
                 {/* メニュー展開用ボタン */}
             </div>
