@@ -280,7 +280,7 @@ function AtsukorologyPage() {
 
                     <StaggeredList className="space-y-12">
                         <StaggeredItem>
-                            <SessionCard variant="light" title={<>First Session<br className="md:hidden" /> (Long Version)</>} subtitle="約90分 / ￥12,000-" content={
+                            <SessionCard variant="light" title={<>First Session<br className="md:hidden" /> (Long Version)</>} subtitle="約90分 / ￥15,000-" content={
                                 <div>
                                     <div className='text-sm md:text-base lg:text-lg space-y-4'>
                                         <p>
@@ -310,7 +310,7 @@ function AtsukorologyPage() {
                         </StaggeredItem>
 
                         <StaggeredItem>
-                            <SessionCard variant="light" title={<>First Session<br className="md:hidden" /> (Short Version)</>} subtitle="約45分 / ￥5,000-" content={
+                            <SessionCard variant="light" title={<>First Session<br className="md:hidden" /> (Short Version)</>} subtitle="約45分 / ￥7,000-" content={
                                 <div>
                                     <div className='text-sm md:text-base lg:text-lg space-y-4'>
                                         <p>初めての方に受けていただくセッションですが、ざっくりと話を聞いてみたい方にオススメです。</p>
@@ -333,7 +333,7 @@ function AtsukorologyPage() {
                         </StaggeredItem>
 
                         <StaggeredItem>
-                            <SessionCard variant="light" title="Student Session" subtitle="約30分 / ￥2,000-" content={
+                            <SessionCard variant="light" title="Student Session" subtitle="約30分 / ￥2,500-" content={
                                 <div>
                                     <div className='text-sm md:text-base lg:text-lg space-y-4'>
                                         <p>学生さん限定のセッションです。</p>
@@ -353,7 +353,7 @@ function AtsukorologyPage() {
                         </StaggeredItem>
 
                         <StaggeredItem>
-                            <SessionCard variant="light" title="Repeat Session" subtitle="約60分 / ￥8,000-" content={
+                            <SessionCard variant="light" title="Repeat Session" subtitle="約60分 / ￥9,000-" content={
                                 <div>
                                     <div className='text-sm md:text-base lg:text-lg space-y-4'>
                                         <p>First Sessionを受けて頂いた方が対象のセッションです。今、どんな選択をしたらいいの？今年のテーマ、取り組むべき課題は？何を目指したらいい？今後向かうべき方向性は？といった、人生プランをご提案させて頂きます。</p>
