@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { SCROLL_REVEAL_OPTIONS } from '../constants/scrollReveal';
 
 interface FadeInSectionProps {
   children: React.ReactNode;
@@ -8,7 +9,7 @@ interface FadeInSectionProps {
 
 const FadeInSection: React.FC<FadeInSectionProps> = ({ children, delay = 0 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, margin: "10000px 0px -35% 0px" });
+  const isInView = useInView(ref, SCROLL_REVEAL_OPTIONS);
 
   return (
     <motion.div

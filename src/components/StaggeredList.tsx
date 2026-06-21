@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { SCROLL_REVEAL_OPTIONS } from '../constants/scrollReveal';
 
 interface StaggeredListProps {
     children: React.ReactNode;
@@ -9,7 +10,7 @@ interface StaggeredListProps {
 
 const StaggeredList: React.FC<StaggeredListProps> = ({ children, staggerDelay = 0.2, className = "" }) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false, margin: "10000px 0px -35% 0px" });
+    const isInView = useInView(ref, SCROLL_REVEAL_OPTIONS);
 
     const containerVariants = {
         hidden: { opacity: 0 },

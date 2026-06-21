@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { SCROLL_REVEAL_OPTIONS } from '../constants/scrollReveal';
 
 interface TextRevealProps {
     children: React.ReactNode;
@@ -10,7 +11,7 @@ interface TextRevealProps {
 
 const TextReveal: React.FC<TextRevealProps> = ({ children, width = "fit-content", delay = 0, className = "" }) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false, margin: "10000px 0px -35% 0px" });
+    const isInView = useInView(ref, SCROLL_REVEAL_OPTIONS);
 
     return (
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }} className={className}>
