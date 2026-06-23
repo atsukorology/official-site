@@ -353,7 +353,7 @@ function AtsukorologyPage() {
                         </StaggeredItem>
 
                         <StaggeredItem>
-                            <SessionCard variant="light" title="Repeat Session" subtitle="約60分 / ￥9,000-" content={
+                            <SessionCard variant="light" title="Repeat Session" subtitle="約60分 / ￥10,000-" content={
                                 <div>
                                     <div className='text-sm md:text-base lg:text-lg space-y-4'>
                                         <p>First Sessionを受けて頂いた方が対象のセッションです。今、どんな選択をしたらいいの？今年のテーマ、取り組むべき課題は？何を目指したらいい？今後向かうべき方向性は？といった、人生プランをご提案させて頂きます。</p>
