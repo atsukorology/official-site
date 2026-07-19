@@ -254,9 +254,9 @@ function AtsukorologyPage() {
                     </StaggeredList>
 
                     <Modal isOpen={isCancelPolicyModalOpen} onClose={handleCloseCancelPolicy}>
-                        <div className="text-slate-800">
-                            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">キャンセルポリシー</h2>
-                            <div className="space-y-4 text-sm md:text-base lg:text-lg">
+                        <div className="text-slate-200">
+                            <h2 className="text-xl md:text-2xl lg:text-3xl font-medium mb-4 text-white">キャンセルポリシー</h2>
+                            <div className="space-y-4 text-sm md:text-base lg:text-lg text-slate-300 leading-relaxed">
                                 <p>※入金後の返金はできません。</p>
                                 <p>※ご都合が悪くなってしまった場合は日程変更も可能ですので、お気軽にご相談ください。</p>
                             </div>
