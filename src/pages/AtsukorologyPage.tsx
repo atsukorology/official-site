@@ -46,7 +46,7 @@ function AtsukorologyPage() {
             <MenuBar />
             <div id="top" className="pt-0"></div>
 
-            <ImageWithText imageUrl={TitleBackground} text="あなたの人生の秘書。" fontSize="4vw" />
+            <ImageWithText imageUrl={TitleBackground} text="人生の秘書" fontSize="6vw" />
 
             <div className="flex justify-center relative z-10 -mt-20 bg-gradient-to-b from-transparent to-slate-950 pt-32 pb-20">
                 <div className="max-w-6xl w-full px-6">
@@ -54,10 +54,10 @@ function AtsukorologyPage() {
                     <div className="text-center mb-16 flex flex-col items-center">
                         <ParallaxElement offset={-30}>
                             <TextReveal>
-                                <h1 className="font-noto text-3xl md:text-5xl lg:text-6xl font-light tracking-widest leading-relaxed text-white drop-shadow-lg text-center">
-                                    “人生の秘書”
+                                <h1 className="font-noto text-2xl md:text-4xl lg:text-5xl font-light tracking-widest leading-relaxed text-white drop-shadow-lg text-center">
+                                    あなたの“人生の秘書”
                                     <br className="md:hidden" />
-                                    としての占い師
+                                    として。
                                 </h1>
                             </TextReveal>
                         </ParallaxElement>
@@ -65,25 +65,25 @@ function AtsukorologyPage() {
 
                     <div className="font-noto font-light text-sm md:text-lg lg:text-xl space-y-8 leading-loose tracking-wide text-slate-300 max-w-4xl mx-auto">
                         <FadeInSection>
-                            <p>人生の<strong className="text-blue-300 font-medium">専属秘書</strong>として、あなたの“本質”と“今”を導きます。</p>
+                            <p>人生の<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">専属秘書</span>として、あなたの“本質”と“今”を導きます。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p>人生に<strong className="text-blue-300 font-medium">専属の秘書</strong>がいたら、どんなに心強いでしょう。私は、<strong className="text-blue-300 font-medium">西洋占星術</strong>と<strong className="text-blue-300 font-medium">タロット</strong>を用いて、あなたの「人生の秘書」として寄り添い、より自分らしく生きるためのサポートをいたします。</p>
+                            <p>人生に<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">専属の秘書</span>がいたら、どんなに心強いでしょう。私は、<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">西洋占星術</span>と<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">タロット</span>を用いて、あなたの「人生の秘書」として寄り添い、より自分らしく生きるためのサポートをいたします。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p><strong className="text-blue-300 font-medium">西洋占星術</strong>では、生まれた瞬間の星の配置から、あなたが生まれ持った個性や才能、人生のテーマを読み解きます。いわば、あなた専用の“<strong className="text-blue-300 font-medium">人生の設計図</strong>”を開くような時間です。</p>
+                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">西洋占星術</span>では、生まれた瞬間の星の配置から、あなたが生まれ持った個性や才能、人生のテーマを読み解きます。いわば、あなた専用の“<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">人生の設計図</span>”を開くような時間です。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p><strong className="text-blue-300 font-medium">タロット</strong>では、今抱えている迷いや選択の岐路に対して、「今、何が必要なのか」「どう動くと流れが変わるのか」を具体的にお伝えします。</p>
+                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">タロット</span>では、今抱えている迷いや選択の岐路に対して、「今、何が必要なのか」「どう動くと流れが変わるのか」を具体的にお伝えします。</p>
                         </FadeInSection>
                         <FadeInSection>
                             <p>将来への不安や、誰にも言えない悩み…。ときには立ち止まり、誰かに頼ることも大切です。そして「特に悩みはないけれど、なんとなく停滞している」という時も。あなたの中に眠る力を引き出し、一歩を踏み出す勇気を取り戻すお手伝いをいたします。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p><strong className="text-blue-300 font-medium">占い</strong>とは“<strong className="text-blue-300 font-medium">うらなり</strong>”――すなわち、裏の成り立ち。出来事の表側だけでなく、その“裏側”にある意味をひも解くことで、あなたが自分らしい人生を選び取っていけるようにサポートいたします。</p>
+                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">占い</span>とは“<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">うらなり</span>”――すなわち、裏の成り立ち。出来事の表側だけでなく、その“裏側”にある意味をひも解くことで、あなたが自分らしい人生を選び取っていけるようにサポートいたします。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p>星とカードが示すメッセージを通して、あなたの人生がより<strong className="text-blue-300 font-medium">Happy</strong>に輝いていきますように。</p>
+                            <p>星とカードが示すメッセージを通して、あなたの人生がより<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">Happy</span>に輝いていきますように。</p>
                         </FadeInSection>
                     </div>
 
@@ -105,16 +105,16 @@ function AtsukorologyPage() {
 
                     <div className="font-noto font-light text-sm md:text-lg lg:text-xl space-y-8 leading-loose tracking-wide text-slate-300 max-w-4xl mx-auto">
                         <FadeInSection>
-                            <p><strong className="text-blue-300 font-medium">西洋占星術</strong>は、4000年以上の歴史を持つ天文学と統計学に基づくビッグデータです。ホロスコープという天体の配置図を用いて、そこから読み取れるあなただけの情報をお伝えします。</p>
+                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">西洋占星術</span>は、4000年以上の歴史を持つ天文学と統計学に基づくビッグデータです。ホロスコープという天体の配置図を用いて、そこから読み取れるあなただけの情報をお伝えします。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p>私たちが普段「星占い」で目にする星座は、実は<strong className="text-blue-300 font-medium">太陽星座</strong>と呼ばれるものです。これは、生まれた瞬間に太陽が位置していた星座を示しています。</p>
+                            <p>私たちが普段「星占い」で目にする星座は、実は<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">太陽星座</span>と呼ばれるものです。これは、生まれた瞬間に太陽が位置していた星座を示しています。</p>
                         </FadeInSection>
                         <FadeInSection>
                             <p>けれども、私たちの生まれた空には、太陽以外にも月や水星、金星、火星など――さまざまな天体が、それぞれの場所で輝いています。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p><strong className="text-blue-300 font-medium">ホロスコープ</strong>は、ギリシャ語で時間（ora）と観察者（scopos）。東の地平線から昇ってくる星を観察する、これが由来です。ホロスコープは、あなたが生まれた瞬間の星々の配置を切りとった、あなただけの<strong className="text-blue-300 font-medium">天体の配置図</strong>です。生涯変わることはありません。</p>
+                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">ホロスコープ</span>は、ギリシャ語で時間（ora）と観察者（scopos）。東の地平線から昇ってくる星を観察する、これが由来です。ホロスコープは、あなたが生まれた瞬間の星々の配置を切りとった、あなただけの<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">天体の配置図</span>です。生涯変わることはありません。</p>
                         </FadeInSection>
                         <FadeInSection>
                             <p>西洋占星術では、このホロスコープを読み解くことで、性格や才能、思考の傾向、感情の動き、人間関係のテーマ、そして人生の流れまでも見つめていきます。</p>
@@ -123,10 +123,10 @@ function AtsukorologyPage() {
                             <p>星占いで見ている「一つの星座」は、あなたという宇宙のほんの一部。ホロスコープを読み解くことで、あなたという存在の全体像――“本当の自分”がより立体的に浮かび上がってきます。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p><strong className="text-blue-300 font-medium">タロットカード</strong>は、「心」の声を聴くためのツールです。選択の迷い、見えない不安、あなたの本心――一枚一枚のカードは、あなた自身も気づいていない<strong className="text-blue-300 font-medium">潜在意識</strong>からのメッセージを映し出します。</p>
+                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">タロットカード</span>は、「心」の声を聴くためのツールです。選択の迷い、見えない不安、あなたの本心――一枚一枚のカードは、あなた自身も気づいていない<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">潜在意識</span>からのメッセージを映し出します。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p>それは未来を縛る予言ではなく、あなたがより良い未来を選ぶための<strong className="text-blue-300 font-medium">智慧</strong>。あなたの心が本当に望む道を探すお手伝いをいたします。</p>
+                            <p>それは未来を縛る予言ではなく、あなたがより良い未来を選ぶための<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">智慧</span>。あなたの心が本当に望む道を探すお手伝いをいたします。</p>
                         </FadeInSection>
                     </div>
 
@@ -137,7 +137,7 @@ function AtsukorologyPage() {
                     <FadeInSection>
                         <div className="text-center mb-12">
                             <TextReveal width="100%">
-                                <h2 className="font-noto text-2xl md:text-4xl lg:text-5xl font-light tracking-[0.3em] text-blue-200 text-center">
+                                <h2 className="font-noto text-3xl md:text-5xl lg:text-6xl font-light tracking-[0.3em] text-white text-center">
                                     Astrologer
                                 </h2>
                             </TextReveal>
@@ -169,7 +169,7 @@ function AtsukorologyPage() {
                                 </p>
                             </FadeInSection>
                             <FadeInSection>
-                                <div className="py-6 text-blue-200 italic">
+                                <div className="py-6 text-white italic text-lg md:text-2xl lg:text-3xl">
                                     <p>「頑張りたいけど、どうしたらいいかわからない」</p>
                                     <p>「誰かに話を聞いてほしい」</p>
                                     <p>「そっと背中を押してほしい」</p>
@@ -204,7 +204,7 @@ function AtsukorologyPage() {
                             </TextReveal>
                         </ParallaxElement>
                         <FadeInSection delay={0.3}>
-                            <p className="font-noto font-light text-sm md:text-lg lg:text-xl tracking-widest mt-8 text-blue-600">
+                            <p className="font-noto font-light text-lg md:text-2xl lg:text-3xl tracking-widest mt-8 text-slate-800">
                                 ホロスコープを用いたプライベートセッションをオンラインで実施します。
                             </p>
                         </FadeInSection>
@@ -245,7 +245,7 @@ function AtsukorologyPage() {
                                     <p>銀行振込</p>
                                     <p>セッション前日までにお支払いをお願いいたします。</p>
                                     <p className="text-slate-500 text-xs md:text-sm lg:text-base">※振込に係る手数料はお客さまご負担となります。</p>
-                                    <button onClick={handleOpenCancelPolicy} className='text-blue-600 hover:text-blue-400 transition-colors underline underline-offset-4 mt-2'>
+                                    <button onClick={handleOpenCancelPolicy} className='text-slate-800 hover:text-slate-600 transition-colors underline underline-offset-4 mt-2'>
                                         <p>キャンセルポリシー</p>
                                     </button>
                                 </div>
