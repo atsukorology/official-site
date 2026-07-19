@@ -30,14 +30,12 @@ function AtsukorologyPage() {
     const handleReservation = (sessionType: string) => {
         // 予約フォームのURL（実際のURLに置き換えてください）
         let reservationUrl = '';
-        if (sessionType === 'first-long') {
-            reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=First+Session+%EF%BC%88Direction+Book%E4%BB%98%EF%BC%89%EF%BF%A512,000%EF%BC%8F90min.';
-        } else if (sessionType === 'first-short') {
-            reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=First+Session+%EF%BF%A55,000%EF%BC%8F45min.';
+        if (sessionType === 'first') {
+            reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=First+Session+%EF%BC%88Direction+Book%E4%BB%98%EF%BC%89%EF%BF%A515,000%EF%BC%8F90min.';
         } else if (sessionType === 'repeat') {
-            reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=Repeat+Session+%EF%BC%88Direction+Book%E4%BB%98%EF%BC%89%EF%BF%A58,000%EF%BC%8F60min.';
+            reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=Repeat+Session+%EF%BC%88Direction+Book%E4%BB%98%EF%BC%89%EF%BF%A510,000%EF%BC%8F60min.';
         } else if (sessionType === 'student') {
-            reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=Student+Session%EF%BC%88%E5%AD%A6%E7%94%9F%E3%81%AE%E6%96%B9%E9%99%90%E5%AE%9A%EF%BC%89%EF%BF%A52,000%EF%BC%8F30min.';
+            reservationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeHYr9lYbtpr0xBZfa7Lubd6HinhwRsymLVt37t1An-uAiX_A/viewform?usp=pp_url&entry.850193464=Student+Session%EF%BC%88%E5%AD%A6%E7%94%9F%E3%81%AE%E6%96%B9%E9%99%90%E5%AE%9A%EF%BC%89%EF%BF%A53,000%EF%BC%8F30min.';
         }
         window.open(reservationUrl, '_blank');
     };
@@ -280,7 +278,7 @@ function AtsukorologyPage() {
 
                     <StaggeredList className="space-y-12">
                         <StaggeredItem>
-                            <SessionCard variant="light" title={<>First Session<br className="md:hidden" /> (Long Version)</>} subtitle="約90分 / ￥12,000-" content={
+                            <SessionCard variant="light" title="First Session" subtitle="約90分 / ￥15,000-" content={
                                 <div>
                                     <div className='text-sm md:text-base lg:text-lg space-y-4'>
                                         <p>
@@ -300,7 +298,7 @@ function AtsukorologyPage() {
                                         <Button
                                             normalColor="#3b82f6"
                                             hoverColor="#1e293b"
-                                            onClick={() => handleReservation('first-long')}
+                                            onClick={() => handleReservation('first')}
                                         >
                                             セッションを予約
                                         </Button>
@@ -310,50 +308,7 @@ function AtsukorologyPage() {
                         </StaggeredItem>
 
                         <StaggeredItem>
-                            <SessionCard variant="light" title={<>First Session<br className="md:hidden" /> (Short Version)</>} subtitle="約45分 / ￥5,000-" content={
-                                <div>
-                                    <div className='text-sm md:text-base lg:text-lg space-y-4'>
-                                        <p>初めての方に受けていただくセッションですが、ざっくりと話を聞いてみたい方にオススメです。</p>
-                                        <p>お伝えする内容は、基本的にLong Versionと同じです。</p>
-                                        <p className="text-sm text-slate-500">
-                                            ※正確な出生時刻がわからない方は、お伝えできる情報に限りがありますので、こちらのプランがオススメです。
-                                        </p>
-                                    </div>
-                                    <div className="flex justify-center mt-8">
-                                        <Button
-                                            normalColor="#3b82f6"
-                                            hoverColor="#1e293b"
-                                            onClick={() => handleReservation('first-short')}
-                                        >
-                                            セッションを予約
-                                        </Button>
-                                    </div>
-                                </div>
-                            } />
-                        </StaggeredItem>
-
-                        <StaggeredItem>
-                            <SessionCard variant="light" title="Student Session" subtitle="約30分 / ￥2,000-" content={
-                                <div>
-                                    <div className='text-sm md:text-base lg:text-lg space-y-4'>
-                                        <p>学生さん限定のセッションです。</p>
-                                        <p>自分の才能は？得意なことは？何が向いている？適職は？友人関係や恋愛観は？など、自己分析したい方にオススメです。普段は大学院の研究室で秘書をしている私です。多くの学生さんと交流してきていますので、どうぞお気軽にお越しください。</p>
-                                    </div>
-                                    <div className="flex justify-center mt-8">
-                                        <Button
-                                            normalColor="#3b82f6"
-                                            hoverColor="#1e293b"
-                                            onClick={() => handleReservation('student')}
-                                        >
-                                            セッションを予約
-                                        </Button>
-                                    </div>
-                                </div>
-                            } />
-                        </StaggeredItem>
-
-                        <StaggeredItem>
-                            <SessionCard variant="light" title="Repeat Session" subtitle="約60分 / ￥8,000-" content={
+                            <SessionCard variant="light" title="Repeat Session" subtitle="約60分 / ￥10,000-" content={
                                 <div>
                                     <div className='text-sm md:text-base lg:text-lg space-y-4'>
                                         <p>First Sessionを受けて頂いた方が対象のセッションです。今、どんな選択をしたらいいの？今年のテーマ、取り組むべき課題は？何を目指したらいい？今後向かうべき方向性は？といった、人生プランをご提案させて頂きます。</p>
@@ -364,6 +319,26 @@ function AtsukorologyPage() {
                                             normalColor="#3b82f6"
                                             hoverColor="#1e293b"
                                             onClick={() => handleReservation('repeat')}
+                                        >
+                                            セッションを予約
+                                        </Button>
+                                    </div>
+                                </div>
+                            } />
+                        </StaggeredItem>
+
+                        <StaggeredItem>
+                            <SessionCard variant="light" title="Student Session" subtitle="約30分 / ￥3,000-" content={
+                                <div>
+                                    <div className='text-sm md:text-base lg:text-lg space-y-4'>
+                                        <p>学生さん限定のセッションです。</p>
+                                        <p>自分の才能は？得意なことは？何が向いている？適職は？友人関係や恋愛観は？など、自己分析したい方にオススメです。普段は大学院の研究室で秘書をしている私です。多くの学生さんと交流してきていますので、どうぞお気軽にお越しください。</p>
+                                    </div>
+                                    <div className="flex justify-center mt-8">
+                                        <Button
+                                            normalColor="#3b82f6"
+                                            hoverColor="#1e293b"
+                                            onClick={() => handleReservation('student')}
                                         >
                                             セッションを予約
                                         </Button>
