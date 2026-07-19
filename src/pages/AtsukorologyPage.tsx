@@ -54,7 +54,7 @@ function AtsukorologyPage() {
                     <div className="text-center mb-16 flex flex-col items-center">
                         <ParallaxElement offset={-30}>
                             <TextReveal>
-                                <h1 className="font-noto text-3xl md:text-4xl lg:text-5xl font-light tracking-widest leading-relaxed text-white drop-shadow-lg text-center">
+                                <h1 className="font-noto text-3xl md:text-5xl lg:text-6xl font-light tracking-widest leading-relaxed text-white drop-shadow-lg text-center">
                                     “人生の秘書”
                                     <br className="md:hidden" />
                                     としての占い師
@@ -63,7 +63,7 @@ function AtsukorologyPage() {
                         </ParallaxElement>
                     </div>
 
-                    <div className="font-noto font-light text-sm md:text-base lg:text-lg space-y-8 leading-loose tracking-wide text-slate-300 max-w-4xl mx-auto">
+                    <div className="font-noto font-light text-sm md:text-lg lg:text-xl space-y-8 leading-loose tracking-wide text-slate-300 max-w-4xl mx-auto">
                         <FadeInSection>
                             <p>人生の<strong className="text-blue-300 font-medium">専属秘書</strong>として、あなたの“本質”と“今”を導きます。</p>
                         </FadeInSection>
@@ -94,7 +94,7 @@ function AtsukorologyPage() {
                     <div className="text-center mb-16 flex flex-col items-center">
                         <ParallaxElement offset={-30}>
                             <TextReveal>
-                                <h1 className="font-noto text-3xl md:text-4xl lg:text-5xl font-light tracking-widest leading-relaxed text-white text-center">
+                                <h1 className="font-noto text-3xl md:text-5xl lg:text-6xl font-light tracking-widest leading-relaxed text-white text-center">
                                     西洋占星術×タロットで
                                     <br />
                                     あなたの“見えない裏”を知る
@@ -103,7 +103,7 @@ function AtsukorologyPage() {
                         </ParallaxElement>
                     </div>
 
-                    <div className="font-noto font-light text-sm md:text-base lg:text-lg space-y-8 leading-loose tracking-wide text-slate-300 max-w-4xl mx-auto">
+                    <div className="font-noto font-light text-sm md:text-lg lg:text-xl space-y-8 leading-loose tracking-wide text-slate-300 max-w-4xl mx-auto">
                         <FadeInSection>
                             <p><strong className="text-blue-300 font-medium">西洋占星術</strong>は、4000年以上の歴史を持つ天文学と統計学に基づくビッグデータです。ホロスコープという天体の配置図を用いて、そこから読み取れるあなただけの情報をお伝えします。</p>
                         </FadeInSection>
@@ -137,12 +137,12 @@ function AtsukorologyPage() {
                     <FadeInSection>
                         <div className="text-center mb-12">
                             <TextReveal width="100%">
-                                <h2 className="font-noto text-2xl md:text-3xl lg:text-4xl font-light tracking-[0.3em] text-blue-200 text-center">
+                                <h2 className="font-noto text-2xl md:text-4xl lg:text-5xl font-light tracking-[0.3em] text-blue-200 text-center">
                                     Astrologer
                                 </h2>
                             </TextReveal>
                             <TextReveal width="100%" delay={0.1}>
-                                <h2 className="font-noto text-xl md:text-2xl lg:text-3xl font-light tracking-[0.3em] mt-4 text-white text-center">
+                                <h2 className="font-noto text-xl md:text-3xl lg:text-4xl font-light tracking-[0.3em] mt-4 text-white text-center">
                                     Atsuko
                                 </h2>
                             </TextReveal>
@@ -157,7 +157,7 @@ function AtsukorologyPage() {
                             </ParallaxElement>
                         </div>
 
-                        <div className="font-noto font-light text-sm md:text-base lg:text-lg leading-loose tracking-wide text-slate-300 max-w-3xl mx-auto text-center space-y-6">
+                        <div className="font-noto font-light text-sm md:text-lg lg:text-xl leading-loose tracking-wide text-slate-300 max-w-3xl mx-auto text-center space-y-6">
                             <FadeInSection>
                                 <p>
                                     元銀行員として、多くのお客様の声に耳を傾け、資産やライフプランの相談を承ってきました。今は大学の秘書として、教授のサポートとたくさんの学生さんの成長を側で見守っています。その経験から、今度はあなたの'人生の秘書'として、占いでそっと あなたに寄り添い、心が軽くなるようなメッセージをお届けしたいと思っています。
@@ -198,13 +198,13 @@ function AtsukorologyPage() {
                     <div className="text-center mb-16 flex flex-col items-center">
                         <ParallaxElement offset={-20}>
                             <TextReveal>
-                                <h1 className="font-noto text-4xl md:text-5xl lg:text-6xl font-light tracking-[0.2em] text-slate-800 text-center">
+                                <h1 className="font-noto text-4xl md:text-6xl lg:text-7xl font-light tracking-[0.2em] text-slate-800 text-center">
                                     Private Session
                                 </h1>
                             </TextReveal>
                         </ParallaxElement>
                         <FadeInSection delay={0.3}>
-                            <p className="font-noto font-light text-sm md:text-base lg:text-lg tracking-widest mt-8 text-blue-600">
+                            <p className="font-noto font-light text-sm md:text-lg lg:text-xl tracking-widest mt-8 text-blue-600">
                                 ホロスコープを用いたプライベートセッションをオンラインで実施します。
                             </p>
                         </FadeInSection>
@@ -215,7 +215,7 @@ function AtsukorologyPage() {
                             <InfoPanel variant="light" icon={<div style={{ width: '3em' }}>
                                 <PopMeetingIcon fill="#475569" />
                             </div>} title="開催方法" content={
-                                <div className='text-xs md:text-sm lg:text-base space-y-2'>
+                                <div className='text-xs md:text-base lg:text-lg space-y-2'>
                                     <p>Google Meetを用いてオンラインで実施します。</p>
                                     <p>お申し込み後にオンライン会議用のリンクをメールでお送りします。</p>
                                 </div>
@@ -228,7 +228,7 @@ function AtsukorologyPage() {
                                     <PopCalendarIcon fill="#475569" />
                                 </div>
                             } title="開催日時" content={
-                                <div className='text-xs md:text-sm lg:text-base space-y-2'>
+                                <div className='text-xs md:text-base lg:text-lg space-y-2'>
                                     <p>①「セッションを予約」ボタンから予約フォームにアクセスし、必要事項を入力して下さい。</p>
                                     <p>②セッション日時を決定します。</p>
                                     <p>③セッション前日までにお支払いをお願いします。​</p>
@@ -241,10 +241,10 @@ function AtsukorologyPage() {
                             <InfoPanel variant="light" icon={<div style={{ width: '3em' }}>
                                 <PopCurrencyIcon fill="#475569" />
                             </div>} title="お支払い方法" content={
-                                <div className='text-xs md:text-sm lg:text-base space-y-2'>
+                                <div className='text-xs md:text-base lg:text-lg space-y-2'>
                                     <p>銀行振込</p>
                                     <p>セッション前日までにお支払いをお願いいたします。</p>
-                                    <p className="text-slate-500 text-xs">※振込に係る手数料はお客さまご負担となります。</p>
+                                    <p className="text-slate-500 text-xs md:text-sm lg:text-base">※振込に係る手数料はお客さまご負担となります。</p>
                                     <button onClick={handleOpenCancelPolicy} className='text-blue-600 hover:text-blue-400 transition-colors underline underline-offset-4 mt-2'>
                                         <p>キャンセルポリシー</p>
                                     </button>
@@ -255,8 +255,8 @@ function AtsukorologyPage() {
 
                     <Modal isOpen={isCancelPolicyModalOpen} onClose={handleCloseCancelPolicy}>
                         <div className="text-slate-200">
-                            <h2 className="text-xl md:text-2xl lg:text-3xl font-medium mb-4 text-white">キャンセルポリシー</h2>
-                            <div className="space-y-4 text-sm md:text-base lg:text-lg text-slate-300 leading-relaxed">
+                            <h2 className="text-xl md:text-3xl lg:text-4xl font-medium mb-4 text-white">キャンセルポリシー</h2>
+                            <div className="space-y-4 text-sm md:text-lg lg:text-xl text-slate-300 leading-relaxed">
                                 <p>※入金後の返金はできません。</p>
                                 <p>※ご都合が悪くなってしまった場合は日程変更も可能ですので、お気軽にご相談ください。</p>
                             </div>
@@ -269,7 +269,7 @@ function AtsukorologyPage() {
                     <div className="text-center my-20 flex flex-col items-center">
                         <ParallaxElement offset={-20}>
                             <TextReveal>
-                                <h1 className="font-noto text-4xl md:text-5xl lg:text-6xl font-light tracking-[0.3em] text-slate-800 text-center">
+                                <h1 className="font-noto text-4xl md:text-6xl lg:text-7xl font-light tracking-[0.3em] text-slate-800 text-center">
                                     Plans
                                 </h1>
                             </TextReveal>
@@ -280,7 +280,7 @@ function AtsukorologyPage() {
                         <StaggeredItem>
                             <SessionCard variant="light" title="First Session" subtitle="約90分 / ￥15,000-" content={
                                 <div>
-                                    <div className='text-sm md:text-base lg:text-lg space-y-4'>
+                                    <div className='text-sm md:text-lg lg:text-xl space-y-4'>
                                         <p>
                                             初めての方に受けていただけるセッションです。
                                         </p>
@@ -319,7 +319,7 @@ function AtsukorologyPage() {
                         <StaggeredItem>
                             <SessionCard variant="light" title="Repeat Session" subtitle="約60分 / ￥10,000-" content={
                                 <div>
-                                    <div className='text-sm md:text-base lg:text-lg space-y-4'>
+                                    <div className='text-sm md:text-lg lg:text-xl space-y-4'>
                                         <p>
                                             First Session（初回）を受けたことがあり、すでに「オリジナルホロスコープブック」をお持ちの方を対象とした継続セッションです。
                                         </p>
@@ -357,7 +357,7 @@ function AtsukorologyPage() {
                         <StaggeredItem>
                             <SessionCard variant="light" title="Student Session" subtitle="約30分 / ￥3,000-" content={
                                 <div>
-                                    <div className='text-sm md:text-base lg:text-lg space-y-4'>
+                                    <div className='text-sm md:text-lg lg:text-xl space-y-4'>
                                         <p>学生さん限定のセッションです。</p>
                                         <p>自分の才能は？得意なことは？何が向いている？適職は？友人関係や恋愛観は？など、自己分析したい方にオススメです。普段は大学院の研究室で秘書をしている私です。多くの学生さんと交流してきていますので、どうぞお気軽にお越しください。</p>
                                     </div>

@@ -29,10 +29,10 @@ const SessionCard: React.FC<SessionCardProps> = ({
         >
             <div>
                 {/* タイトル */}
-                <h2 className={`text-2xl md:text-3xl lg:text-4xl font-semibold text-center tracking-wide ${isDark ? "text-slate-100" : "text-slate-800"}`}>{title}</h2>
+                <h2 className={`text-2xl md:text-4xl lg:text-5xl font-semibold text-center tracking-wide ${isDark ? "text-slate-100" : "text-slate-800"}`}>{title}</h2>
 
                 {/* サブタイトル */}
-                <p className={`text-center mt-3 md:text-lg lg:text-xl font-light tracking-widest ${isDark ? "text-blue-200/80" : "text-blue-500"}`}>{subtitle}</p>
+                <p className={`text-center mt-3 md:text-xl lg:text-2xl font-light tracking-widest ${isDark ? "text-blue-200/80" : "text-blue-500"}`}>{subtitle}</p>
 
                 {/* コンテンツ */}
                 <div className={`mt-8 leading-relaxed ${isDark ? "text-slate-300" : "text-slate-600"}`}>

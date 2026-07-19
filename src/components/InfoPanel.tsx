@@ -28,7 +28,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({
             transition={{ duration: 0.5 }}
         >
             {/* タイトル */}
-            <h2 className={`text-lg md:text-xl lg:text-2xl font-semibold mb-3 pt-2 tracking-wider border-b pb-2 inline-block ${isDark ? "text-blue-200 border-slate-700" : "text-blue-600 border-slate-300"}`}>{title}</h2>
+            <h2 className={`text-lg md:text-2xl lg:text-3xl font-semibold mb-3 pt-2 tracking-wider border-b pb-2 inline-block ${isDark ? "text-blue-200 border-slate-700" : "text-blue-600 border-slate-300"}`}>{title}</h2>
             <div className={`flex items-start justify-between pb-4 rounded-md bg-${backgroundColor}`}>
                 {/* テキストコンテンツ */}
                 <div className="flex-grow pt-2">
