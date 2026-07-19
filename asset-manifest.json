@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/official-site/static/css/main.ee4f56c9.css",
-    "main.js": "/official-site/static/js/main.90753ecb.js",
+    "main.js": "/official-site/static/js/main.8633fe52.js",
     "static/js/453.e549112a.chunk.js": "/official-site/static/js/453.e549112a.chunk.js",
     "static/media/title-background.png": "/official-site/static/media/title-background.08b226358a37d877942b.png",
     "static/media/atsuko-trim.png": "/official-site/static/media/atsuko-trim.05548436cf83cf4fc45c.png",
     "static/media/brand-icon.svg": "/official-site/static/media/brand-icon.cd820af8f843aa89daf23690d73dca25.svg",
     "index.html": "/official-site/index.html",
     "main.ee4f56c9.css.map": "/official-site/static/css/main.ee4f56c9.css.map",
-    "main.90753ecb.js.map": "/official-site/static/js/main.90753ecb.js.map",
+    "main.8633fe52.js.map": "/official-site/static/js/main.8633fe52.js.map",
     "453.e549112a.chunk.js.map": "/official-site/static/js/453.e549112a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee4f56c9.css",
-    "static/js/main.90753ecb.js"
+    "static/js/main.8633fe52.js"
   ]
 }
