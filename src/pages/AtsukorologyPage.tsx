@@ -96,7 +96,7 @@ function AtsukorologyPage() {
                             <TextReveal>
                                 <h1 className="font-noto text-3xl md:text-4xl lg:text-5xl font-light tracking-widest leading-relaxed text-white text-center">
                                     西洋占星術×タロットで
-                                    <br className="md:hidden" />
+                                    <br />
                                     あなたの“見えない裏”を知る
                                 </h1>
                             </TextReveal>
