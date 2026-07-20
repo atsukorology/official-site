@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/official-site/static/css/main.19083be8.css",
-    "main.js": "/official-site/static/js/main.2c22fb3e.js",
+    "main.css": "/official-site/static/css/main.962b675f.css",
+    "main.js": "/official-site/static/js/main.bf74bd55.js",
     "static/js/453.e549112a.chunk.js": "/official-site/static/js/453.e549112a.chunk.js",
     "static/media/title-background.png": "/official-site/static/media/title-background.08b226358a37d877942b.png",
     "static/media/atsuko-trim.png": "/official-site/static/media/atsuko-trim.05548436cf83cf4fc45c.png",
     "static/media/brand-icon.svg": "/official-site/static/media/brand-icon.cd820af8f843aa89daf23690d73dca25.svg",
     "index.html": "/official-site/index.html",
-    "main.19083be8.css.map": "/official-site/static/css/main.19083be8.css.map",
-    "main.2c22fb3e.js.map": "/official-site/static/js/main.2c22fb3e.js.map",
+    "main.962b675f.css.map": "/official-site/static/css/main.962b675f.css.map",
+    "main.bf74bd55.js.map": "/official-site/static/js/main.bf74bd55.js.map",
     "453.e549112a.chunk.js.map": "/official-site/static/js/453.e549112a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19083be8.css",
-    "static/js/main.2c22fb3e.js"
+    "static/css/main.962b675f.css",
+    "static/js/main.bf74bd55.js"
   ]
 }
