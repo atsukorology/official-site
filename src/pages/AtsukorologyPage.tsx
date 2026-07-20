@@ -58,7 +58,7 @@ function AtsukorologyPage() {
             <MenuBar />
             <div id="top" className="pt-0"></div>
 
-            <ImageWithText imageUrl={TitleBackground} text="人生の秘書" fontSize="6vw" />
+            <ImageWithText imageUrl={TitleBackground} text="人生の秘書。" fontSize="6vw" />
 
             <div className="flex justify-center relative z-10 -mt-20 bg-gradient-to-b from-transparent to-slate-950 pt-32 pb-20">
                 <div className="max-w-6xl w-full px-6">
@@ -69,7 +69,7 @@ function AtsukorologyPage() {
                                 <h1 className="font-noto text-2xl md:text-4xl lg:text-5xl font-light tracking-widest leading-relaxed text-white drop-shadow-lg text-center">
                                     あなたの“人生の秘書”
                                     <br className="md:hidden" />
-                                    として。
+                                    として
                                 </h1>
                             </TextReveal>
                         </ParallaxElement>
@@ -342,7 +342,7 @@ function AtsukorologyPage() {
                                             本セッションでは、直近の運勢のバイオリズムを軸に、あなたの未来を多角的に俯瞰した「アップデート版PDFブック」を新たにお渡しいたします。手元のホロスコープブックと併せて、これからの行動指針としてご活用ください。
                                         </p>
                                         <div className="space-y-3 pt-2">
-                                            <p className="font-medium text-slate-700">【おすすめの受講タイミング】</p>
+                                            <p className="font-medium text-slate-700">【おすすめのタイミング】</p>
                                             <ul className="list-disc list-inside space-y-2">
                                                 <li>ご自身のバイオリズムが切り替わる「お誕生日前後の3ヶ月頃」</li>
                                                 <li>年に1回、あるいは半年に1回などの定期的な作戦会議として</li>
