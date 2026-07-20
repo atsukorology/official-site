@@ -13,9 +13,9 @@ const MenuBar: React.FC = () => {
     };
 
     const handleReservationClick = () => {
-        const plansSection = document.getElementById('session-plans');
-        if (plansSection) {
-            plansSection.scrollIntoView({ behavior: 'smooth' });
+        const reservationSection = document.getElementById('reservation');
+        if (reservationSection) {
+            reservationSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
 

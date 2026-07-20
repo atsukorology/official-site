@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import MenuBar from '../components/MenuBar';
 import ImageWithText from '../components/ImageWithText';
 import TitleBackground from '../assets/title-background.png';
@@ -16,7 +17,18 @@ import StaggeredList, { StaggeredItem } from '../components/StaggeredList';
 import ParallaxElement from '../components/ParallaxElement';
 
 function AtsukorologyPage() {
+    const [searchParams] = useSearchParams();
     const [isCancelPolicyModalOpen, setIsCancelPolicyModalOpen] = useState(false);
+
+    useEffect(() => {
+        const section = searchParams.get('section');
+        if (!section) return;
+
+        const element = document.getElementById(section);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [searchParams]);
 
     const handleOpenCancelPolicy = (e: React.MouseEvent) => {
         e.preventDefault();
@@ -191,7 +203,7 @@ function AtsukorologyPage() {
                 </div>
             </div>
 
-            <div className="flex justify-center bg-white text-slate-800 py-20 relative overflow-hidden">
+            <div id="reservation" className="scroll-mt-24 flex justify-center bg-white text-slate-800 py-20 relative overflow-hidden">
 
                 <div className="max-w-6xl w-full px-6 relative z-10">
 
