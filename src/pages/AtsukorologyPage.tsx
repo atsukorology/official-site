@@ -217,7 +217,7 @@ function AtsukorologyPage() {
                         </ParallaxElement>
                         <FadeInSection delay={0.3}>
                             <p className="font-noto font-light text-lg md:text-2xl lg:text-3xl tracking-widest mt-8 text-slate-800">
-                                ホロスコープを用いたプライベートセッションをオンラインで実施します。
+                                ホロスコープを用いた<br className="md:hidden" />プライベートセッションを<br />オンラインで実施します。
                             </p>
                         </FadeInSection>
                     </div>
