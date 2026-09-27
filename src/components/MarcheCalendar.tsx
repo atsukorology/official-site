@@ -31,6 +31,13 @@ const shiftMonth = ({ year, month }: YearMonth, diff: number): YearMonth => {
 
 const monthKey = ({ year, month }: YearMonth) => `${year}-${String(month).padStart(2, '0')}`;
 
+/** AnimatePresence の custom で最新の進行方向を、出ていく月にも渡す */
+const monthVariants = {
+    enter: (direction: number) => ({ opacity: 0, x: direction * 24 }),
+    center: { opacity: 1, x: 0 },
+    exit: (direction: number) => ({ opacity: 0, x: direction * -24 }),
+};
+
 const weekdayOf = (key: string) => {
     const [y, m, d] = key.split('-').map(Number);
     return new Date(Date.UTC(y, m - 1, d)).getUTCDay();
@@ -287,9 +294,10 @@ const MarcheCalendar: React.FC = () => {
                                 <motion.div
                                     key={monthKey(viewMonth)}
                                     custom={monthDirection}
-                                    initial={{ opacity: 0, x: monthDirection * 24 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    exit={{ opacity: 0, x: monthDirection * -24 }}
+                                    variants={monthVariants}
+                                    initial="enter"
+                                    animate="center"
+                                    exit="exit"
                                     transition={{ duration: 0.25, ease: 'easeOut' }}
                                     className="grid grid-cols-7 gap-1 md:gap-1.5"
                                 >
