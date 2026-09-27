@@ -18,6 +18,13 @@ import ParallaxElement from '../components/ParallaxElement';
 import MarcheCalendar from '../components/MarcheCalendar';
 import { isCalendarConfigured, isDemoMode } from '../lib/googleCalendar';
 
+const PROFILE_TITLES = [
+    '人生の秘書',
+    'Astrologer',
+    'Astral Adviser',
+    '見えない側を感じるTarotist',
+];
+
 function AtsukorologyPage() {
     const [searchParams] = useSearchParams();
     const [isCancelPolicyModalOpen, setIsCancelPolicyModalOpen] = useState(false);
@@ -60,7 +67,7 @@ function AtsukorologyPage() {
             <MenuBar />
             <div id="top" className="pt-0"></div>
 
-            <ImageWithText imageUrl={TitleBackground} text="人生の秘書。" fontSize="6vw" />
+            <ImageWithText imageUrl={TitleBackground} text="" fontSize="6vw" />
 
             <div className="flex justify-center relative z-10 -mt-20 bg-gradient-to-b from-transparent to-slate-950 pt-32 pb-20">
                 <div className="max-w-6xl w-full px-6">
@@ -174,7 +181,20 @@ function AtsukorologyPage() {
                             </TextReveal>
                         </div>
 
-                        <div className="flex justify-center mb-12">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-12 lg:gap-16 mb-12">
+                            <StaggeredList staggerDelay={0.15} className="flex md:self-stretch items-center gap-8 lg:gap-12">
+                                <div className="font-noto font-light text-center md:text-right space-y-4 md:space-y-6">
+                                    {PROFILE_TITLES.map((title) => (
+                                        <StaggeredItem key={title}>
+                                            <p className="text-base md:text-xl lg:text-2xl tracking-[0.2em] text-slate-200">
+                                                {title}
+                                            </p>
+                                        </StaggeredItem>
+                                    ))}
+                                </div>
+                                <div className="hidden md:block w-px self-stretch bg-gradient-to-b from-transparent via-blue-300/40 to-transparent" />
+                            </StaggeredList>
+
                             <ParallaxElement offset={50}>
                                 <div className="relative">
                                     <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
