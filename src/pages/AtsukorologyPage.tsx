@@ -15,6 +15,8 @@ import AuroraBackground from '../components/AuroraBackground';
 import TextReveal from '../components/TextReveal';
 import StaggeredList, { StaggeredItem } from '../components/StaggeredList';
 import ParallaxElement from '../components/ParallaxElement';
+import MarcheCalendar from '../components/MarcheCalendar';
+import { isCalendarConfigured, isDemoMode } from '../lib/googleCalendar';
 
 function AtsukorologyPage() {
     const [searchParams] = useSearchParams();
@@ -62,6 +64,18 @@ function AtsukorologyPage() {
 
             <div className="flex justify-center relative z-10 -mt-20 bg-gradient-to-b from-transparent to-slate-950 pt-32 pb-20">
                 <div className="max-w-6xl w-full px-6">
+
+                    {(isCalendarConfigured || isDemoMode) && (
+                        <>
+                            <FadeInSection>
+                                <MarcheCalendar />
+                            </FadeInSection>
+
+                            <div className="my-20">
+                                <Divider marginHorizontal={4} color="rgba(148, 163, 184, 0.2)" />
+                            </div>
+                        </>
+                    )}
 
                     <div className="text-center mb-16 flex flex-col items-center">
                         <ParallaxElement offset={-30}>
