@@ -20,12 +20,17 @@ const MenuBar: React.FC = () => {
     };
 
     return (
-        <motion.nav
-            className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800 text-white py-4 px-6 flex items-center justify-between"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-        >
+        <>
+            {/* fixed のメニューと同じ高さだけ本文を下げ、先頭写真の上端が隠れないようにする */}
+            <div aria-hidden className="pointer-events-none invisible border-b border-transparent py-4">
+                <BrandIcon width="4em" height="3em" strokeWidth="0.7" />
+            </div>
+            <motion.nav
+                className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800 text-white py-4 px-6 flex items-center justify-between"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+            >
             {/* 左側：アイコンとタイトル */}
             <div className="flex items-center space-x-2">
                 <Link to="/portal" className="hover:opacity-80 transition-opacity mr-4">
@@ -42,6 +47,7 @@ const MenuBar: React.FC = () => {
                 {/* メニュー展開用ボタン */}
             </div>
         </motion.nav>
+        </>
     );
 };
 
