@@ -98,10 +98,10 @@ function AtsukorologyPage() {
 
                     <div className="font-noto font-light text-sm md:text-lg lg:text-xl space-y-8 leading-loose tracking-wide text-slate-300 max-w-4xl mx-auto">
                         <FadeInSection>
-                            <p>人生の<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">専属秘書</span>として、あなたの“本質”と“今”を導きます。</p>
+                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">人生に専属の秘書がいたら、どんなに心強いでしょう。</span></p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p>人生に<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">専属の秘書</span>がいたら、どんなに心強いでしょう。私は、<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">西洋占星術</span>と<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">タロット</span>を用いて、あなたの「人生の秘書」として寄り添い、より自分らしく生きるためのサポートをいたします。</p>
+                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">西洋占星術</span>と<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">タロット</span>を用いて、あなたの<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">人生の専属秘書</span>のように寄り添い、より自分らしく生きるためのメッセージをお伝えいたします。</p>
                         </FadeInSection>
                         <FadeInSection>
                             <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">西洋占星術</span>では、生まれた瞬間の星の配置から、あなたが生まれ持った個性や才能、人生のテーマを読み解きます。いわば、あなた専用の“<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">人生の設計図</span>”を開くような時間です。</p>
