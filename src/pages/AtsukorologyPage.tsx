@@ -116,7 +116,7 @@ function AtsukorologyPage() {
                             <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">占い</span>とは“<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">うらなり</span>”――すなわち、裏の成り立ち。出来事の表側だけでなく、その“裏側”にある意味をひも解くことで、あなたが自分らしい人生を選び取っていけるようにサポートいたします。</p>
                         </FadeInSection>
                         <FadeInSection>
-                            <p>星とカードが示すメッセージを通して、あなたの人生がより<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">Happy</span>に輝いていきますように。</p>
+                            <p>星とカードが示すメッセージを通して、あなたの人生がより<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">Lucky</span>で<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">Happy</span>に輝いていきますように。</p>
                         </FadeInSection>
                     </div>
 
