@@ -25,6 +25,27 @@ const PROFILE_TITLES = [
     '見えない側を感じるTarotist',
 ];
 
+const PHILOSOPHY_STEPS = [
+    {
+        number: '01',
+        title: 'ずるく',
+        lead: '罪悪感や遠慮がある。でも「いい人」でいるだけでは人生は動かないと気づき始める段階。',
+        description: '「そんなのずるい！」そう思うところに、人生を打開するヒントがある。最初はちょっとずるくていい。「こんなことしていいのかな」という罪悪感を抱えながら、自分のやりたいようにやってみる。',
+    },
+    {
+        number: '02',
+        title: 'あざとく',
+        lead: '自分のための選択と行動をする。罪悪感よりも、自分の本心を叶えるために動けるようになる段階。',
+        description: 'そこから、あざとくなる。自分の本心を知り、意図して動く。「こんな私でも大丈夫」を知って、自分の人生を自分で動かす。',
+    },
+    {
+        number: '03',
+        title: '賢く',
+        lead: '自分が心地よく生きられる選択をする。',
+        description: '「ずるい」「あざとい」という言葉すら必要なくなる段階。最後は、賢くなる。勝ち負けでも善悪でもない、自分にとって心地よい選択をする。',
+    },
+];
+
 function AtsukorologyPage() {
     const [searchParams] = useSearchParams();
     const [isCancelPolicyModalOpen, setIsCancelPolicyModalOpen] = useState(false);
@@ -71,6 +92,65 @@ function AtsukorologyPage() {
 
             <div className="flex justify-center relative z-10 -mt-20 bg-gradient-to-b from-transparent to-slate-950 pt-32 pb-20">
                 <div className="max-w-6xl w-full px-6">
+
+                    <section aria-labelledby="philosophy-heading" className="font-noto font-light">
+                        <FadeInSection>
+                            <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
+                                <p className="text-xs md:text-sm tracking-[0.35em] text-blue-300 mb-6">MY PHILOSOPHY</p>
+                                <h2 id="philosophy-heading" className="text-3xl md:text-4xl lg:text-5xl leading-relaxed tracking-widest text-white mb-8">
+                                    ずるく、あざとく、賢く生きる
+                                </h2>
+                                <div className="text-sm md:text-lg leading-loose tracking-wide text-slate-300 space-y-5 md:space-y-6">
+                                    <p>
+                                        「え？要領よく、人を利用して生きるということ？」
+                                        <br />
+                                        そんな風に感じますか？
+                                        <br />
+                                        <span className="text-white">そうではありません。</span>
+                                    </p>
+                                    <p>
+                                        遠慮を手放して、
+                                        <br />
+                                        自分の人生を自分で動かせるようになるまでの3ステップを、
+                                        <br />
+                                        私はこう考えています。
+                                    </p>
+                                    <p>
+                                        遠慮して、我慢して、いい人でいて、無難に生きる。
+                                        <br />
+                                        <span className="text-base md:text-xl text-white">それだけが人生じゃない。</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </FadeInSection>
+
+                        <StaggeredList className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                            {PHILOSOPHY_STEPS.map((step) => (
+                                <StaggeredItem key={step.number} className="h-full">
+                                    <div className="h-full rounded-2xl border border-blue-200/20 bg-slate-900/60 px-6 py-8 lg:px-8 lg:py-10 shadow-xl shadow-slate-950/20">
+                                        <p className="text-xs tracking-[0.3em] text-blue-300 mb-5">STEP {step.number}</p>
+                                        <h3 className="text-2xl lg:text-3xl tracking-widest text-white mb-6">{step.title}</h3>
+                                        <div className="w-12 h-px bg-blue-300/50 mb-6" aria-hidden="true" />
+                                        <p className="text-base lg:text-lg leading-relaxed text-slate-100 mb-5">{step.lead}</p>
+                                        <p className="text-sm lg:text-base leading-loose tracking-wide text-slate-300">{step.description}</p>
+                                    </div>
+                                </StaggeredItem>
+                            ))}
+                        </StaggeredList>
+
+                        <FadeInSection>
+                            <div className="max-w-3xl mx-auto mt-12 md:mt-16 text-center space-y-5 text-sm md:text-lg leading-loose tracking-wide text-slate-300">
+                                <p>ずるさを許し、あざとさを身につけ、智慧に変える。</p>
+                                <p>ずるく、あざとく、賢く。</p>
+                                <p className="text-lg md:text-2xl text-white">人生を、もっと自由に、もっとおもしろく。</p>
+                                <p>自分の欲望・才能・癖・人との関わり方を知って、人生をうまく動かすための智慧として、私の占いをご活用ください☆</p>
+                            </div>
+                        </FadeInSection>
+                    </section>
+
+                    <div className="my-20">
+                        <Divider marginHorizontal={4} color="rgba(148, 163, 184, 0.2)" />
+                    </div>
 
                     {(isCalendarConfigured || isDemoMode) && (
                         <>
