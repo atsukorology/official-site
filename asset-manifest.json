@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/official-site/static/css/main.83481805.css",
-    "main.js": "/official-site/static/js/main.19389998.js",
+    "main.css": "/official-site/static/css/main.d2a59f7d.css",
+    "main.js": "/official-site/static/js/main.fed422af.js",
     "static/js/453.e549112a.chunk.js": "/official-site/static/js/453.e549112a.chunk.js",
     "static/media/atsuko-trim.png": "/official-site/static/media/atsuko-trim.05548436cf83cf4fc45c.png",
     "static/media/title-background.png": "/official-site/static/media/title-background.144835b1aa0563940ac4.png",
@@ -15,14 +15,14 @@
     "static/media/84689686-F3E3-4B3E-9DAA-0A8E4711E9F5_L0_001-2026_7_18 14_14_32.jpg": "/official-site/static/media/84689686-F3E3-4B3E-9DAA-0A8E4711E9F5_L0_001-2026_7_18 14_14_32.3cbf403f3ca649466420.jpg",
     "static/media/1087E569-FD73-47C7-ADB4-17997691FC95_L0_001-2026_7_18 14_16_05.jpg": "/official-site/static/media/1087E569-FD73-47C7-ADB4-17997691FC95_L0_001-2026_7_18 14_16_05.7e8cf833b3ed657e3133.jpg",
     "static/media/Image_20260719_093712_342.webp": "/official-site/static/media/Image_20260719_093712_342.8bbcc062072362e9bddd.webp",
-    "static/media/brand-icon.svg": "/official-site/static/media/brand-icon.60c99dfe6f7bb026c9fda4350c104098.svg",
+    "static/media/brand-icon.svg": "/official-site/static/media/brand-icon.cd820af8f843aa89daf23690d73dca25.svg",
     "index.html": "/official-site/index.html",
-    "main.83481805.css.map": "/official-site/static/css/main.83481805.css.map",
-    "main.19389998.js.map": "/official-site/static/js/main.19389998.js.map",
+    "main.d2a59f7d.css.map": "/official-site/static/css/main.d2a59f7d.css.map",
+    "main.fed422af.js.map": "/official-site/static/js/main.fed422af.js.map",
     "453.e549112a.chunk.js.map": "/official-site/static/js/453.e549112a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83481805.css",
-    "static/js/main.19389998.js"
+    "static/css/main.d2a59f7d.css",
+    "static/js/main.fed422af.js"
   ]
 }
