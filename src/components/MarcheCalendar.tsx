@@ -12,6 +12,7 @@ import {
 const MONTHS_AHEAD = 12;
 const UPCOMING_LIMIT = 4;
 const WEEKDAYS = ['日', '月', '火', '水', '木', '金', '土'];
+const CALENDAR_WEEKDAYS = [1, 2, 3, 4, 5, 6, 0];
 const MONTH_NAMES = [
     'January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December',
@@ -47,9 +48,10 @@ const jstMidnight = (ym: YearMonth) => new Date(`${monthKey(ym)}-01T00:00:00+09:
 
 const buildMonthGrid = (ym: YearMonth) => {
     const first = `${monthKey(ym)}-01`;
-    const gridStart = addDays(first, -weekdayOf(first));
+    const firstDayOffset = (weekdayOf(first) + 6) % 7;
+    const gridStart = addDays(first, -firstDayOffset);
     const daysInMonth = new Date(Date.UTC(ym.year, ym.month, 0)).getUTCDate();
-    const cellCount = Math.ceil((weekdayOf(first) + daysInMonth) / 7) * 7;
+    const cellCount = Math.ceil((firstDayOffset + daysInMonth) / 7) * 7;
     return Array.from({ length: cellCount }, (_, i) => addDays(gridStart, i));
 };
 
@@ -279,12 +281,12 @@ const MarcheCalendar: React.FC = () => {
                         </div>
 
                         <div className="grid grid-cols-7 mb-2">
-                            {WEEKDAYS.map((label, i) => (
+                            {CALENDAR_WEEKDAYS.map((weekday) => (
                                 <div
-                                    key={label}
-                                    className={`py-2 text-center text-xs tracking-widest ${i === 0 ? 'text-rose-300/70' : i === 6 ? 'text-sky-300/70' : 'text-slate-500'}`}
+                                    key={weekday}
+                                    className={`py-2 text-center text-xs tracking-widest ${weekday === 0 ? 'text-rose-300/70' : weekday === 6 ? 'text-sky-300/70' : 'text-slate-500'}`}
                                 >
-                                    {label}
+                                    {WEEKDAYS[weekday]}
                                 </div>
                             ))}
                         </div>
@@ -308,6 +310,8 @@ const MarcheCalendar: React.FC = () => {
                                         const isPast = key < today;
                                         const isSelected = key === selectedDate;
                                         const day = Number(key.slice(8));
+                                        const weekday = weekdayOf(key);
+                                        const weekendColor = weekday === 0 ? 'text-rose-300' : weekday === 6 ? 'text-sky-300' : '';
 
                                         return (
                                             <button
@@ -328,7 +332,10 @@ const MarcheCalendar: React.FC = () => {
                                                     isToday && !hasEvent && 'border border-blue-200/40 text-blue-100',
                                                 ].filter(Boolean).join(' ')}
                                             >
-                                                <span>{day}</span>
+                                                <span className={[
+                                                    weekendColor,
+                                                    weekendColor && isPast && !hasEvent && 'opacity-50',
+                                                ].filter(Boolean).join(' ')}>{day}</span>
                                                 {hasEvent && (
                                                     <span className="absolute bottom-1.5 md:bottom-2 h-1 w-1 rounded-full bg-blue-200 shadow-[0_0_6px_2px_rgba(191,219,254,0.8)]" />
                                                 )}
