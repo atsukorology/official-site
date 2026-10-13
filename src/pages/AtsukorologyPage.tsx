@@ -128,7 +128,6 @@ function AtsukorologyPage() {
                             {PHILOSOPHY_STEPS.map((step) => (
                                 <StaggeredItem key={step.number} className="h-full">
                                     <div className="h-full rounded-2xl border border-blue-200/20 bg-slate-900/60 px-6 py-8 lg:px-8 lg:py-10 shadow-xl shadow-slate-950/20">
-                                        <p className="text-xs tracking-[0.3em] text-blue-300 mb-5">STEP {step.number}</p>
                                         <h3 className="text-2xl lg:text-3xl tracking-widest text-white mb-6">{step.title}</h3>
                                         <div className="w-12 h-px bg-blue-300/50 mb-6" aria-hidden="true" />
                                         <p className="text-base lg:text-lg leading-relaxed text-slate-100 mb-5">{step.lead}</p>
@@ -163,46 +162,6 @@ function AtsukorologyPage() {
                             </div>
                         </>
                     )}
-
-                    <div className="text-center mb-16 flex flex-col items-center">
-                        <ParallaxElement offset={-30}>
-                            <TextReveal>
-                                <h1 className="font-noto text-2xl md:text-4xl lg:text-5xl font-light tracking-widest leading-relaxed text-white drop-shadow-lg text-center">
-                                    あなたの“人生の秘書”
-                                    <br className="md:hidden" />
-                                    として
-                                </h1>
-                            </TextReveal>
-                        </ParallaxElement>
-                    </div>
-
-                    <div className="font-noto font-light text-sm md:text-lg lg:text-xl space-y-8 leading-loose tracking-wide text-slate-300 max-w-4xl mx-auto">
-                        <FadeInSection>
-                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">人生に専属の秘書がいたら、どんなに心強いでしょう。</span></p>
-                        </FadeInSection>
-                        <FadeInSection>
-                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">西洋占星術</span>と<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">タロット</span>を用いて、あなたの<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">人生の専属秘書</span>のように寄り添い、より自分らしく生きるためのメッセージをお伝えいたします。</p>
-                        </FadeInSection>
-                        <FadeInSection>
-                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">西洋占星術</span>では、生まれた瞬間の星の配置から、あなたが生まれ持った個性や才能、人生のテーマを読み解きます。いわば、あなた専用の“<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">人生の設計図</span>”を開くような時間です。</p>
-                        </FadeInSection>
-                        <FadeInSection>
-                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">タロット</span>では、今抱えている迷いや選択の岐路に対して、「今、何が必要なのか」「どう動くと流れが変わるのか」を具体的にお伝えします。</p>
-                        </FadeInSection>
-                        <FadeInSection>
-                            <p>将来への不安や、誰にも言えない悩み…。ときには立ち止まり、誰かに頼ることも大切です。そして「特に悩みはないけれど、なんとなく停滞している」という時も。あなたの中に眠る力を引き出し、一歩を踏み出す勇気を取り戻すお手伝いをいたします。</p>
-                        </FadeInSection>
-                        <FadeInSection>
-                            <p><span className="text-white font-light text-lg md:text-2xl lg:text-3xl">占い</span>とは“<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">うらなり</span>”――すなわち、裏の成り立ち。出来事の表側だけでなく、その“裏側”にある意味をひも解くことで、あなたが自分らしい人生を選び取っていけるようにサポートいたします。</p>
-                        </FadeInSection>
-                        <FadeInSection>
-                            <p>星とカードが示すメッセージを通して、あなたの人生がより<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">Lucky</span>で<span className="text-white font-light text-lg md:text-2xl lg:text-3xl">Happy</span>に輝いていきますように。</p>
-                        </FadeInSection>
-                    </div>
-
-                    <div className="my-20">
-                        <Divider marginHorizontal={4} color="rgba(148, 163, 184, 0.2)" />
-                    </div>
 
                     <div className="text-center mb-16 flex flex-col items-center">
                         <ParallaxElement offset={-30}>
