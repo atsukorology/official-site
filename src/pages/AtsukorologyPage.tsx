@@ -102,13 +102,6 @@ function AtsukorologyPage() {
                                 </h2>
                                 <div className="text-sm md:text-lg leading-loose tracking-wide text-slate-300 space-y-5 md:space-y-6">
                                     <p>
-                                        「え？要領よく、人を利用して生きるということ？」
-                                        <br />
-                                        そんな風に感じますか？
-                                        <br />
-                                        <span className="text-white">そうではありません。</span>
-                                    </p>
-                                    <p>
                                         遠慮を手放して、
                                         <br />
                                         自分の人生を自分で動かせるようになるまでの3ステップを、
