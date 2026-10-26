@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Button from './Button';
 import MenuToggleButton from './MenuToggleButton';
 import BrandIcon from './BrandIcon';
+import { scrollToSection } from '../lib/scrollToSection';
 
 const MenuBar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +14,7 @@ const MenuBar: React.FC = () => {
     };
 
     const handleReservationClick = () => {
-        const reservationSection = document.getElementById('reservation');
-        if (reservationSection) {
-            reservationSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        scrollToSection('reservation');
     };
 
     return (

@@ -17,6 +17,7 @@ import StaggeredList, { StaggeredItem } from '../components/StaggeredList';
 import ParallaxElement from '../components/ParallaxElement';
 import MarcheCalendar from '../components/MarcheCalendar';
 import { isCalendarConfigured, isDemoMode } from '../lib/googleCalendar';
+import { watchScrollToSection } from '../lib/scrollToSection';
 
 const PROFILE_TITLES = [
     '人生の秘書',
@@ -53,11 +54,7 @@ function AtsukorologyPage() {
     useEffect(() => {
         const section = searchParams.get('section');
         if (!section) return;
-
-        const element = document.getElementById(section);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+        return watchScrollToSection(section);
     }, [searchParams]);
 
     const handleOpenCancelPolicy = (e: React.MouseEvent) => {
@@ -83,7 +80,7 @@ function AtsukorologyPage() {
     };
 
     return (
-        <div className="bg-slate-950 text-slate-200 selection:bg-blue-500 selection:text-white overflow-x-hidden relative min-h-screen">
+        <div className="bg-slate-950 text-slate-200 selection:bg-blue-500 selection:text-white overflow-x-clip relative min-h-screen">
             <AuroraBackground />
             <MenuBar />
             <div id="top" className="pt-0"></div>
