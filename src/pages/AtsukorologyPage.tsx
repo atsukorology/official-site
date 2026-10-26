@@ -111,7 +111,7 @@ function AtsukorologyPage() {
                                     <p>
                                         遠慮して、我慢して、いい人でいて、無難に生きる。
                                         <br />
-                                        <span className="text-base md:text-xl text-white">それだけが人生じゃない。</span>
+                                        <span className="text-base md:text-xl text-white">それだけが人生ではありません。</span>
                                     </p>
                                 </div>
                             </div>
